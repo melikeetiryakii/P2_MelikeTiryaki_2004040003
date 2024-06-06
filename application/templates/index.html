@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Recognition</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 98vh;
+            background-image: url('static\background.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: sans-serif;
+        }
+        .container {
+            background: #A1B1B0;
+            padding: 20px;
+            border-radius: 50px;
+            text-align: center;
+            align-items: center;
+        }
+        .button {
+            display: align;
+            margin: 10px auto;
+            padding: 10px 20px;
+            font-size: 32px;
+            cursor: pointer;
+            border: none;
+            border-radius: 20px;
+            background-color: #153D3B;
+            color: #A1B1B0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Duygunu Seslendir!</h1>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".wav" class="button">
+            <button type="submit" class="button">Yükle ve tahmin et!</button>
+        </form>
+        <form action="/" method="post">
+            <button type="submit" name="record" value="record" class="button">Ses kaydet ve tahmin et!</button>
+        </form>
+    </div>
+</body>
+</html>
